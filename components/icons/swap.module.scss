@@ -1,0 +1,11 @@
+.Swap{
+  &::before{
+    font-family: 'icomoon';
+    content: '\e91c';
+    font-size: 20px;
+    font-weight: normal;
+    text-shadow: none;
+    transform: rotate(-90deg);
+    display: inline-block;
+  }
+}

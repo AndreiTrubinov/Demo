@@ -1,0 +1,54 @@
+.Requires {
+    .requiresTitle {
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #212529;
+        border-bottom: 1px solid #dee2e6;
+        
+        margin-bottom: 24px;
+        span {
+            padding: 0 10px 15px;
+            border-bottom: 3px solid #117ae3;
+        }
+    }
+    h3 {
+        margin-top: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.54;
+        letter-spacing: normal;
+        color: #212529;
+        margin-bottom: 8px;
+    }
+    .requiresFormations {
+        margin-top: 16px;
+    }
+}
+.requiresTags {
+    span {
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #495057;
+        padding: 2px 6px;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        margin-right: 4px;
+        margin-bottom: 8px;
+        border: none;
+        
+        max-width: 210px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

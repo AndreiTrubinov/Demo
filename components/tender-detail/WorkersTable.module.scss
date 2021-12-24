@@ -1,0 +1,34 @@
+.add{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before{
+        font-family: 'icomoon';
+        content: '\e942';
+        font-size: 18px;
+        color: #fa8c16;
+        font-weight: bold;
+    }
+    &::after{
+        content: 'Add';
+    }
+}
+
+.added{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before{
+        font-family: 'icomoon';
+        content: '\e9c5';
+        font-size: 18px;
+        color: #02c953;
+        font-weight: bold;
+    }
+    &::after{
+        content: 'Added';
+        color: #02c953;
+    }
+}

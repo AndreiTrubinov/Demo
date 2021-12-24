@@ -1,0 +1,22 @@
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: bolder;
+  font-size: 28px;
+  font-family: "Inter";
+  div>img{
+  width: 42px;
+  height: 40px;
+  }
+  span{
+    font-family: "Inter";
+  }
+}
+
+@media (max-width: 950px){
+  .logo{
+    font-size: 20px;
+  }
+}

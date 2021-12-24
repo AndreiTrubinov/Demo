@@ -1,0 +1,43 @@
+.documents{
+    outline: none;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s;
+    color: #495057;
+    padding: 0;
+    height: 30px;
+    width: 32px;
+    box-shadow: none;
+    &:hover, &:active, &:focus{
+        background-color: #e9ecef;
+        color: #495057;
+    }
+    &>div::before{
+        font-size: 20px;
+        margin-bottom: 10px;
+        height: 32px;
+    width: 30px;
+    }
+}
+.modal{
+    .filesItem {
+        
+        height: 40px;
+        padding: 10px 12px;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        display: inline-flex;
+        align-items: center;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        &:before {
+            font-family: "icomoon";
+            content: "\e992";
+            color: #6c757d;
+            margin-right: 8px;
+            font-size: 16px;
+        }
+    }
+}

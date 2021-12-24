@@ -1,0 +1,131 @@
+.header {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #343a40;
+    margin-bottom: 12px;
+}
+.Input{
+    .ant-input-affix-wrapper{
+    width: 104px;
+    height: 32px;
+    padding: 6px 12px 6px 4px;
+    border-radius: 4px;
+    border: solid 1px #ced4da;
+    text-align: right;
+    input{
+    text-align: right;
+    }
+}
+}
+.salaryCheckbox {
+    display: flex;
+    gap: 60px;
+    justify-content: flex-end;
+    margin-right: 15%;
+    margin-bottom: 16px;
+}
+.salary {
+    display: flex;
+    padding-right: 10%;
+    gap: 90px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 32px;
+    &Left {
+        p {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 380px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.43;
+            color: #212529;
+            margin-bottom: 24px !important;
+            span {
+                font-weight: normal;
+            }
+        }
+        p:last-child {
+            margin-top: 36px;
+        }
+    }
+    &Right {
+        text-align: right;
+        p {
+            font-size: 14px;
+            line-height: 1.43;
+            color: #212529;
+            margin-bottom: 24px !important;
+        }
+        p:last-child {
+            margin-top: 36px;
+            margin-bottom: 0;
+        }
+    }
+}
+.salaryInputsBox{
+    gap: 45px;
+}
+.ant-input-affix-wrapper{
+    color: #adb5bd;
+}
+.salaryInputs{
+    p{
+        margin-bottom: 12px !important;
+        span{
+            gap: 4px;
+        }
+    }
+    p:last-child {
+        margin-top: 30px;
+        b{
+            letter-spacing: normal;
+            font-weight: 600;
+            color: #212529;
+        }
+        span{
+            color: #adb5bd;
+        }
+    }
+}
+
+@media (max-width: 1250px){
+.salary {
+    padding-right: 10px;
+    gap: 90px;
+    &Left {
+        p {
+            width: 310px;
+            font-size: 14px;
+        }
+    }
+}
+.salary.salaryInputsBox{
+    gap: 15px;
+}
+}
+@media (max-width: 1100px){
+    .salary {
+        padding-right: 0px;
+        gap: 80px;
+        &Left {
+            p {
+                width: 280px;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+        &Right {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+    .salary.salaryInputsBox{
+        gap: 7px;
+    }
+
+}
+            

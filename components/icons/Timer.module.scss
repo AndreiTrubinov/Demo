@@ -1,0 +1,9 @@
+.content{
+  &::before{
+    font-family: 'icomoon';
+    content: '\e9f7';
+    font-size: 23px;
+    font-weight: lighter;
+    text-shadow: none;
+  }
+}

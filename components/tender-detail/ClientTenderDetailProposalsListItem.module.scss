@@ -1,0 +1,246 @@
+.ReponseListItem {
+    padding: 10px 22px 10px 24px;
+    border-radius: 6px;
+    border: solid 1px #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #343a40;
+    font-weight: normal;
+    font-size: 13px;
+    gap: 20px;
+}
+.company {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 200px;
+    &Logo {
+        max-width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: solid 1px #dee2e6;
+        & > div > img {
+            min-width: 24px !important;
+            min-height: 24px !important;
+        }
+    }
+    &Info {
+        h3 {
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.33;
+            color: #343a40;
+            margin-bottom: 4px;
+        }
+    }
+}
+.companyLocation {
+    font-size: 12px;
+    line-height: 1.33;
+    color: #6c757d;
+    gap: 8px;
+    align-items: center;
+    display: inline-flex;
+    margin-bottom: 4px;
+    &::before {
+        content: "\e945";
+        font-family: "icomoon";
+        font-size: 16px;
+        fill: #6c757d;
+    }
+}
+.companyRating {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    .star {
+        color: #ffa700;
+    }
+    p {
+        display: inline-flex;
+        align-items: center;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 1.45;
+        color: #343a40;
+        span {
+            color: #6c757d;
+            font-weight: normal;
+            margin-left: 12px;
+        }
+    }
+}
+.contacts {
+    p {
+        font-size: 13px;
+        line-height: 1.23;
+        color: #343a40;
+    }
+    .mail {
+        font-weight: 600;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        word-wrap: break-word;
+        
+    }
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // width: 162px;
+    p {
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: right;
+        color: #212529;
+        display: inline-flex;
+    }
+    span {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: right;
+        color: #212529;
+        padding-right: 6px;
+        margin-left: 13px;
+    }
+    .prepay {
+        border-radius: 4px;
+        background-color: #d7f4e5;
+        color: #21784b;
+        padding: 2px 6px;
+    }
+    p:nth-child(2){
+      margin-top: 6px;
+    }
+}
+.offerBtn{
+  padding: 6px 12px 6px 16px;
+  border-radius: 4px;
+  background-color: #117ae3;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+  &::before{
+    font-family: 'icomoon';
+    content: '\e9f2';
+    transform: rotateY(180deg);
+    font-weight: lighter;
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 1177px){
+    .offerBtn{
+        padding: 10px 8px 10px 8px;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.43;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 5px;
+        &::before{
+          font-size: 13px;
+        }
+      }
+      .prices {
+        p {
+            font-size: 13px;
+        }
+        span {
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .prepay {
+            border-radius: 4px;
+            background-color: #d7f4e5;
+            color: #21784b;
+            padding: 2px 6px;
+        }
+        p:nth-child(2){
+          margin-top: 6px;
+        }
+    }
+    .price {
+        gap: 14px;
+    }
+    .contacts {
+        p {
+            font-size: 12px;
+            line-height: 1.23;
+            color: #343a40;
+        }
+        .mail {
+            font-weight: 500;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            max-width: 200px;
+        }
+    }
+    .company {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &Info {
+            h3 {
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+    .companyLocation {
+        font-size: 12px;
+        line-height: 1.33;
+        color: #6c757d;
+        gap: 4px;
+        &::before {
+            content: "\e945";
+            font-family: "icomoon";
+            font-size: 14px;
+            fill: #6c757d;
+        }
+    }
+    .ReponseListItem {
+        padding: 10px 10px 10px 10px;
+    }
+    .companyRating {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .star {
+            color: #ffa700;
+        }
+        p {
+            display: inline-flex;
+            align-items: center;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 1.45;
+            color: #343a40;
+            span {
+                color: #6c757d;
+                font-weight: normal;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+

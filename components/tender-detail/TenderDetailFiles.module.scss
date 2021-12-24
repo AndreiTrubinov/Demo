@@ -1,0 +1,62 @@
+.uploadBox {
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+    &>span{
+        display: block !important;
+    }
+}
+.ant-upload-list-text .ant-upload-list-item-name, .ant-upload-list-picture .ant-upload-list-item-name{
+    width: 270px;
+    height: 40px;
+    padding: 10px 12px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    display: inline-flex;
+    align-items: center;
+}
+.Upload {
+    display: flex;
+    justify-content: center;
+}
+.uploadicon {
+    &::before {
+        font-family: "icomoon";
+        content: "\e9b7";
+        font-size: 22px;
+        color: #117ae3;
+    }
+}
+.files {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    gap: 8px;
+    font-weight: 500;
+}
+.filesItem {
+    width: 270px;
+    height: 40px;
+    padding: 10px 12px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    &:before {
+        font-family: "icomoon";
+        content: "\e992";
+        color: #6c757d;
+        margin-right: 8px;
+        font-size: 16px;
+    }
+    // &:after {
+    //     font-family: "icomoon";
+    //     content: "\e913";
+    //     color: #6c757d;
+    //     margin-left: auto;
+    //     font-size: 16px;
+    // }
+}

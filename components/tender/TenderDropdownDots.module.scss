@@ -1,0 +1,23 @@
+.dropdownDots {
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    &:active,
+    &:focus,
+    &:hover {
+        border-radius: 4px;
+        background-color: #e9ecef;
+        color: #495057;
+    }
+}
+.dropdownMenu{
+    padding: 10px 0 8px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px 0 #e9ecef;
+    border: solid 1px #dee2e6;
+    background-color: #fff;
+}

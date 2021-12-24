@@ -1,0 +1,188 @@
+
+.wrapper{
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.searchBox{
+  width: 192px;
+  height: 32px;
+  margin: 0 8px 0 0;
+  padding: 6px 15px 6px 11px;
+  border-radius: 4px;
+  background-color: #f0f2f4;
+  cursor: pointer;
+  transition: all .6s;
+  border: 1px solid #f0f2f4;
+  input::placeholder{
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #495057;
+  }
+  input{
+    max-width: 80%;
+    height: 20px;
+    margin: 0 0 0 8px;
+    font-family: Inter, sans-serif;
+    border: none;
+    background-color:#f0f2f4;
+    outline: none;
+}
+}
+.calendar>div{
+  display: inline-flex;
+  flex-direction: row-reverse;
+  span{
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 4px;
+    font-weight: bolder;
+  }
+}
+.calendar{
+  width: 137px;
+  height: 32px;
+  
+  padding: 6px 12px 6px 8px;
+  border-radius: 4px;
+  background-color: #f0f2f4;
+  border: 1px solid #f0f2f4;
+  cursor: pointer;
+  color: #495057 !important;
+  input::placeholder{
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #495057;
+  }
+}
+.ant-picker-input-placeholder > input {
+  color: #495057 !important;
+}
+
+.dropdownButton{
+  border-radius: 4px;
+  border: 1px solid #f0f2f4;
+  width: 124px;
+  height: 32px;
+  margin: 0 8px;
+  padding: 5px 8px 5px 12px;
+  border-radius: 4px;
+  background-color: #f0f2f4;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  &:hover{
+    background-color: #f0f2f4;
+  }
+}
+.dropdownButtonPoste{
+  max-width: 84px;
+  border-radius: 4px;
+  border: 1px solid #f0f2f4;
+  width: 124px;
+  height: 32px;
+  margin-right: 8px;
+  padding: 5px 8px 5px 12px;
+  border-radius: 4px;
+  background-color: #f0f2f4;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  &:hover{
+    background-color: #f0f2f4;
+  }
+}
+.dropdownButtonSecteur{
+  max-width: 159px;
+  border-radius: 4px;
+  border: 1px solid #f0f2f4;
+  font-family: 'Inter';
+  height: 32px;
+  margin-right: 8px;
+  padding: 5px 8px 5px 12px;
+  border-radius: 4px;
+  background-color: #f0f2f4;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  &:hover{
+    background-color: #f0f2f4;
+  }
+}
+.ButtonEnreg{
+  border-radius: 4px;
+  border: 1px solid #f0f2f4;
+  width: 137px;
+  height: 32px;
+  margin-right: 8px;
+  padding: 5px 8px 5px 12px;
+  border-radius: 4px;
+  background-color: #f0f2f4;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  &:hover{
+    background-color: #f0f2f4;
+  }
+}
+.ButtonPlus{
+  border-radius: 4px;
+  border: 1px solid #f0f2f4;
+  width: 75px;
+  height: 32px;
+  margin-right: 8px;
+  padding: 5px 8px 5px 12px;
+  border-radius: 4px;
+  background-color: #f0f2f4;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  &:hover{
+    background-color: #f0f2f4;
+  }
+}
+
+

@@ -1,0 +1,14 @@
+
+.Tabs{
+  &>div::before{
+    display: none;
+  }
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #adb5bd;
+}
+

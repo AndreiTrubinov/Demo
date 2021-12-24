@@ -1,0 +1,343 @@
+.box {
+    z-index: 2;
+    margin-bottom: 6px;
+    background-color: #fff;
+    flex: none;
+    cursor: default;
+    transition: border-color, box-shadow ease .1s;
+    h3 {
+        margin-bottom: 0;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    width: 296px;
+    border-radius: 6px;
+    border: solid 1px #dee2e6;
+    &Top {
+        padding: 14px 16px 12px;
+    }
+    .Tags {
+        height: 45px;
+        display: flex;
+        align-items: center;
+    }
+    &:hover{
+        // border-color: #f39200;
+        // box-shadow: 0 0 2px #f39200;
+        cursor: pointer;
+        box-shadow:  0 8px 16px rgba(0,0,0,.08);
+    }
+}
+.boxSmall {
+    z-index: 2;
+    margin-bottom: 6px;
+    background-color: #fff;
+    flex: none;
+    cursor: default;
+    transition: border-color, box-shadow ease .1s;
+    h3 {
+        margin-bottom: 0;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    width: 280px;
+    border-radius: 6px;
+    border: solid 1px #dee2e6;
+    .boxTop {
+        padding: 14px 12px 12px 14px;
+    }
+    .contract {
+        margin-bottom: 16px;
+    }
+    .boxBottom {
+        justify-content: space-between;
+    }
+    .boxBottomStatus {
+        display: flex;
+        flex-direction: column;
+    }
+    &:hover{
+        // border-color: #f39200;
+        // box-shadow: 0 0 2px #f39200;
+        cursor: pointer;
+        box-shadow:  0 8px 16px rgba(0,0,0,.08);
+
+    }
+}
+.active {
+    border-left: 3px solid #117ae3;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.active.box {
+    .boxTop {
+        padding: 14px 16px 12px 14px;
+    }
+    .company {
+        padding: 8px 16px 8px 14px;
+    }
+}
+.active.boxSmall {
+    .boxTop {
+        padding: 14px 12px 12px 12px;
+    }
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.offerState {
+    padding: 2px 6px;
+    border-radius: 4px;
+    background-color: #e7f2fd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0e61b4;
+    gap: 3px;
+    div::before {
+        font-size: 16px !important;
+        font-weight: normal !important;
+    }
+    // &::before {
+    //     font-family: "icomoon";
+    //     content: "\e9fa";
+    //     color: #117ae3;
+    //     font-size: 16px;
+    //     font-weight: 500;
+    // }
+}
+.Star {
+    color: #adb5bd;
+}
+.StarActive {
+    color: #f39200;
+}
+.offerName {
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: #343a40;
+    margin-bottom: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.offerAdditional {
+    font-size: 11px;
+    color: #6c757d;
+    margin-bottom: 3px;
+}
+.offerTag {
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.Tags {
+    margin-bottom: 8px;
+    & > div {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    span {
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        border: none;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1.45;
+        color: #495057;
+        padding: 2px 6px;
+        margin-right: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    span:nth-child(2) {
+        max-width: 226px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+.iconPin {
+    font-size: 12px;
+    line-height: 1.33;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    &::before {
+        content: "\e945";
+        font-family: "icomoon";
+        font-size: 16px;
+        fill: #6c757d;
+        margin-right: 8px;
+    }
+}
+.contractDate {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.67;
+    color: #212529;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    span {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.67;
+        color: #6c757d;
+        margin-left: 4px;
+    }
+    &::before {
+        font-family: "icomoon";
+        content: "\e9cb";
+        font-size: 16px;
+        color: #6c757d;
+        margin-right: 4px;
+    }
+}
+.contract {
+    display: flex;
+    gap: 34px;
+    margin-bottom: 12px;
+}
+.iconCase {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    line-height: 1.33;
+    color: #212529;
+}
+.iconCase::before {
+    font-family: "icomoon";
+    content: "\e9cf";
+    font-size: 16px;
+    color: #6c757d;
+}
+.iconUser {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    line-height: 1.23;
+    color: #212529;
+    &::before {
+        font-family: "icomoon";
+        content: "\e94c";
+        font-size: 16px;
+        color: #6c757d;
+    }
+}
+.boxBottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    p {
+        font-size: 11px;
+        color: #6c757d;
+    }
+    p:first-child {
+        margin-right: 8px;
+    }
+    .dots {
+        margin-left: auto;
+        margin-right: 5px;
+    }
+    &Status {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+}
+
+.company {
+    background-color: #f8f9fa;
+    padding: 8px 16px 8px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    p {
+        font-size: 12px;
+        line-height: 1.33;
+        text-align: right;
+        color: #212529;
+        span {
+            font-size: 12px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            text-align: right;
+            padding: 2px 4px;
+            margin-left: 6px;
+        }
+        .green {
+            border-radius: 4px;
+            background-color: #d7f4e5;
+            color: #21784b;
+        }
+    }
+    p:first-child {
+        margin-bottom: 3px;
+    }
+}
+.companyInfo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    
+    h3 {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #343a40;
+        max-height: 36px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 75px;
+    }
+}
+.additionalCompanies {
+    height: 16px;
+    margin-top: 2px;
+    padding: 1px 6px;
+    border-radius: 8px;
+    background-color: #117ae3;
+    font-size: 11px;
+    font-weight: 400;
+    color: #fff;
+    line-height: normal;
+    max-width: 40px;
+}
+.companyImg {
+    max-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: solid 1px #dee2e6;
+}
+.companyImg > div > img {
+    min-width: 16px !important;
+    min-height: 16px !important;
+}

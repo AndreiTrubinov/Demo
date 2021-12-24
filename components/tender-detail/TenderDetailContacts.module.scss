@@ -1,0 +1,43 @@
+.companyInfo {
+    width: 296px;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    margin-bottom: 32px;
+    h3 {
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #212529;
+        margin-bottom: 8px;
+        &:first-child {
+            margin-bottom: 16px;
+        }
+    }
+    p {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.43;
+        color: #212529;
+        margin-bottom: 0px;
+        letter-spacing: normal;
+        font-stretch: normal;
+    }
+    .companyAdress {
+        margin-bottom: 20px;
+    }
+    .companyMail {
+        font-weight: 500;
+    }
+}
+.contact {
+    margin-bottom: 24px;
+}
+.infoHeader {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+

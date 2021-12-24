@@ -1,0 +1,50 @@
+.container {
+    max-width: 1316px;
+    padding: 0 10px;
+    margin: 40px auto 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    height: 130vh;
+    
+    &::-webkit-scrollbar {
+      width: 0; 
+     }
+    &{
+      scrollbar-width: none; 
+    }
+}
+
+.offerList{
+  padding-right: 20px;
+  height: 130vh;
+  flex: none;
+  
+  &::-webkit-scrollbar {
+    width: 0; 
+   }
+  &{
+    scrollbar-width: none; 
+  }
+}
+.offerInfo{
+    width: 920px;
+    max-width: 100%;
+  &::-webkit-scrollbar {
+    width: 0; 
+  }
+  &{
+    scrollbar-width: none; 
+  }
+}
+@media (max-width: 1100px){
+  .container{
+    padding: 0 5px;
+  }
+  .offerList{
+    padding-right: 10px;
+  }
+}
+
+
+

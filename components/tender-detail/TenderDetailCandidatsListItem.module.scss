@@ -1,0 +1,104 @@
+.candidat {
+  width: 272px;
+  padding: 10px 18px 9px 16px;
+  border-radius: 6px;
+  border: solid 1px #dee2e6;
+  background-color: #fff;
+  h3 {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.43;
+      color: #343a40;
+      margin-bottom: 4px;
+  }
+  .location {
+      font-size: 12px;
+      line-height: 1.33;
+      color: #6c757d;
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 0;
+      &::before {
+          font-family: "icomoon";
+          content: "\e945";
+          font-size: 14px;
+          font-weight: 400;
+      }
+      &:last-child{
+          margin-bottom: 0;
+      }
+  }
+}
+
+.candidatMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.candidatLeft{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.candidatBottom{
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: #212529;
+}
+
+.icons{
+    color: #495057;
+}
+.pencil{
+    outline: none;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s;
+    &::before{
+        font-family: 'icomoon';
+        content: '\e99b';
+        font-size: 20px;
+    }
+    &:hover, &:active, &:focus{
+        background-color: #e9ecef;
+    }
+}
+.trash{
+    outline: none;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s;
+    &::before{
+        font-family: 'icomoon';
+        content: '\e913';
+        font-size: 20px;
+    }
+    &:hover, &:active, &:focus{
+        background-color: #e9ecef;
+    }
+}
+.documents{
+    outline: none;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s;
+    &::before{
+        font-family: 'icomoon';
+        content: '\e990';
+        font-size: 20px;
+    }
+    &:hover, &:active, &:focus{
+        background-color: #e9ecef;
+    }
+}
