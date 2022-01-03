@@ -29,7 +29,7 @@ export function logout() {
         { withCredentials: true }
     );
     tokenStore.clearToken();
-    window.me = undefined;
+    // window.me = undefined;
 
     // do not chain
     // request.then((resp) => {
