@@ -1,14 +1,24 @@
 import styles from "./ClientTenderDetailProposalsList.module.scss";
 import { Button, Dropdown, Menu } from "antd";
 import Swap from "../icons/Swap";
-import React from "react";
+import React, { useState } from "react";
 import ClientTenderDetailProposalsListItem from "./ClientTenderDetailProposalsListItem";
 import { IFullTender } from "../../utils/tender";
+
+
 
 interface Props {
     tender: IFullTender;
 }
-export default function ClientTenderDetailProposalsList (  { tender }: Props ) {
+export default function ClientTenderDetailProposalsList({ tender }: Props) {
+    const [filter, setFilter] = useState('default')
+    const menu = (
+        <Menu className={styles.Menu}>
+            <Menu.Item className={styles.MenuItem} onClick={() => setFilter('byTarif')}>Tarif</Menu.Item>
+            <Menu.Item className={styles.MenuItem} onClick={() => setFilter('byDate')}>Date de réponse</Menu.Item>
+            <Menu.Item className={styles.MenuItem} onClick={() => setFilter('byAlphabet')}>Ordre alphabétique</Menu.Item>
+        </Menu>
+    );
 
     return (
         <div className={styles.wrapper}>
@@ -26,23 +36,24 @@ export default function ClientTenderDetailProposalsList (  { tender }: Props ) {
                     </Button>
                 </Dropdown>
             </div>
-            
-            <div className={styles.list}>
-
-            {tender.proposals.map((proposal) =>(
-               <ClientTenderDetailProposalsListItem key={proposal.id} proposal={proposal} tender={tender} /> 
-            ))}
-            </div>
+            {filter === 'byTarif' ?
+                <div className={styles.list}>
+                    {tender.proposals.sort((a, b) => a.total0 - b.total0).map((proposal) => (
+                        <ClientTenderDetailProposalsListItem key={proposal.id} proposal={proposal} tender={tender} />
+                    ))}
+                </div>
+                :
+                <div className={styles.list}>
+                    {tender.proposals.sort().map((proposal) => (
+                        <ClientTenderDetailProposalsListItem key={proposal.id} proposal={proposal} tender={tender} />
+                    ))}
+                </div>
+            }
         </div>
     );
 };
-const menu = (
-    <Menu className={styles.Menu}>
-        <Menu.Item className={styles.MenuItem}>Tarif</Menu.Item>
-        <Menu.Item className={styles.MenuItem}>Date de réponse</Menu.Item>
-        <Menu.Item className={styles.MenuItem}>Ordre alphabétique</Menu.Item>
-        <Menu.Item className={styles.MenuItem}>Notation agence</Menu.Item>
-    </Menu>
-);
+
+
+
 
 

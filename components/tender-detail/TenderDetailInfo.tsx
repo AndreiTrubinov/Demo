@@ -7,8 +7,8 @@ import TenderDetailInfoConditions from "./TenderDetailInfoConditions";
 import TenderDetailInfoDates from "./TenderDetailInfoDates";
 import { IFullTender, ProposalStatus, TenderType } from "../../utils/tender";
 import { IUser } from "../../utils/account";
-import { Button, Modal, Spin } from "antd";
-import TenderCandidatsTable from "../WorkersTable";
+
+
 
 interface Props {
     tender: IFullTender;
@@ -49,13 +49,12 @@ const TenderDetailInfo = ({ me, tender, currentTab }: Props) => {
                     <button className={styles.VisualiserBtn}>Visualiser</button>
                 </div>
 
-                <p className={styles.Posted}>Postée il y a 5 jours</p>
+                <p className={styles.Posted}></p>
             </div>
 
             <div className={styles.Right}>
                 {tender.tendertype === TenderType.DELEGATION ? (
                     <div>
-                        {/* <TenderDetailAgencyInfo me={me} tender={tender} /> */}
                         <TenderDetailContacts
                             tender={tender}
                             showFullDetails={showFullDetails}
@@ -73,7 +72,6 @@ const TenderDetailInfo = ({ me, tender, currentTab }: Props) => {
                             currentTab={currentTab}
                             showFullDetails={showFullDetails}
                         />
-
                         {/* <Button className={styles.addWorkers} onClick={showModal}>Add Workers</Button>
                         <Modal className={styles.workersModal} width={900} title="Workers" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
                             <TenderCandidatsTable tender={tender} />

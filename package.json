@@ -1,0 +1,45 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/react-custom-scroll": "^4.3.2",
+    "antd": "^4.15.6",
+    "awesome-phonenumber": "^2.57.0",
+    "axios": "^0.21.1",
+    "date-fns": "^2.26.0",
+    "debounce-promise": "^3.1.2",
+    "flag-icon-css": "^3.5.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "next": "^11.0.1",
+    "next-plugin-antd-less": "^1.5.2",
+    "react": "17.0.2",
+    "react-custom-scroll": "^4.3.0",
+    "react-dom": "17.0.2",
+    "react-google-autocomplete": "^2.4.0",
+    "react-query": "^3.19.2",
+    "recoil": "^0.4.0",
+    "recoil-outside": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/debounce-promise": "^3.1.4",
+    "@types/lodash": "^4.14.172",
+    "@types/react": "17.0.13",
+    "babel-plugin-i18next-extract": "^0.8.3",
+    "babel-plugin-import": "^1.13.3",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "eslint": "7.30.0",
+    "eslint-config-next": "11.0.1",
+    "next-i18next": "^8.5.5",
+    "sass": "^1.43.4",
+    "svg-url-loader": "^7.1.1",
+    "typescript": "4.3.5"
+  }
+}

@@ -232,7 +232,6 @@ export const TenderCollectionGridItem: React.FC<TenderCollectionGridItemProps> =
                     </p>
 
                     <p className={styles.contractDate}>
-                        {/* WTF :) ?{tender.start.slice(0, 10).split('-').reverse().join('/')} à {tender.start.slice(11, 16).split('-').reverse().join('/')} */}
                         {new Date(tender.start).toLocaleDateString(
                             router.locale
                         )}{" "}

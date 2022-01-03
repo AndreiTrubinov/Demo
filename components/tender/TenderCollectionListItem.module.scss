@@ -281,6 +281,11 @@
     margin-left: 1%;
 }
 
+@media (max-width: 1200px) {
+    .iconUser{
+        min-width: 60px;
+    }
+}
 @media (max-width: 1160px) {
     .box {
         justify-content: space-between;
@@ -292,18 +297,21 @@
         align-items: start;
         margin-left: 0;
     }
-    .iconUser {
-        flex-direction: row;
-        width: 100%;
-        gap: 6px;
-        justify-content: start;
-    }
-    .stage {
+    // .iconUser {
+    //     flex-direction: row;
+    //     width: 100%;
+    //     gap: 6px;
+    //     justify-content: start;
+    // }
+    .stageRow {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-left: 1%;
         min-width: 120px;
+    }
+    .stage{
+        display: none;
     }
     .Id {
         margin-left: 1%;

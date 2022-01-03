@@ -56,14 +56,14 @@ export default function TopNav() {
                             <Dropdown  overlay={(
                                 <Menu className={styles.dropdownMenu} >
                                     <Menu.Item style={{fontSize: '13px'}}>
-                                        <Link href="/entreprise/newtender?type=delegation">
+                                        <Link href="/#">
                                             <a>
                                                 {t('typedelegation', 'Délégation')}
                                             </a>
                                         </Link>
                                     </Menu.Item>
                                     <Menu.Item style={{fontSize: '13px'}}>
-                                        <Link href="/entreprise/newtender?type=management">
+                                        <Link href="/#">
                                             <a>
                                                 {t('typemanagement', 'Gestion')}
                                             </a>
@@ -83,7 +83,7 @@ export default function TopNav() {
                     <div className={styles.iconBell}></div>
                     <Dropdown overlay={(<Menu>
                         <Menu.Item key="logout">
-                            <Link href="/logout"><a>{t('logout', 'Se déconnecter')}</a></Link>
+                            <Link href="#"><a>{t('logout', 'Se déconnecter')}</a></Link>
                         </Menu.Item>
                     </Menu>)}>
                         <Avatar size="large" className="userAvatar" style={{backgroundColor: hashStringToColor(me.firstname)}} alt="avatar" >{me.firstname.slice(0, 2)}</Avatar>

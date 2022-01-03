@@ -16,6 +16,7 @@
     border: solid 1px #dee2e6;
     &Top {
         padding: 14px 16px 12px;
+        min-height: 279px;
     }
     .Tags {
         height: 45px;
@@ -47,6 +48,7 @@
     border: solid 1px #dee2e6;
     .boxTop {
         padding: 14px 12px 12px 14px;
+        min-height: auto;
     }
     .contract {
         margin-bottom: 16px;

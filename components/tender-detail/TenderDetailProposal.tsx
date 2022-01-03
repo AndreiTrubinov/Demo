@@ -26,25 +26,19 @@ export default function TenderDetailProposal({ me, tender, currentTab, proposal 
                     <div className={styles.salary}>
                         <div className={styles.salaryLeft}>
                             <p>
-                                Taux horaire brut<span>1900 €</span>
+                                Sur facture<span>{proposal.total0} €</span>
                             </p>
                             <p>
-                                Nombre d'heures<span>167</span>
+                                Prépayé<span>{proposal.total1}</span>
                             </p>
                             <p>
-                                Nombre de jours<span>23</span>
+                                Coefficient<span>{proposal.coefficient0}</span>
                             </p>
                             <p>
-                                Coefficient<span>0</span>
-                            </p>
-                            <p>
-                                Coefficient de travail majoré<span>0</span>
+                                Coefficient de travail majoré<span>{proposal.coefficient1}</span>
                             </p>
                             <p>
                                 Autre(s) dépense(s)<span>0</span>
-                            </p>
-                            <p>
-                                Total estimé<span>2017,00 €</span>
                             </p>
                         </div>
                         <div className={styles.salaryRight}>
@@ -53,8 +47,7 @@ export default function TenderDetailProposal({ me, tender, currentTab, proposal 
                             <p>0</p>
                             <p>0</p>
                             <p>0</p>
-                            <p>0</p>
-                            <p>0 €</p>
+                            
                         </div>
                     </div>
 
@@ -68,11 +61,8 @@ export default function TenderDetailProposal({ me, tender, currentTab, proposal 
 
                     <h3>Message de l'agence</h3>
 
-                    {showFullDetails ? proposal.message.split('\n').map((item, key) => (<Fragment key={key}>{item}<br /></Fragment>))
+                    {proposal.message.split('\n').map((item, key) => (<Fragment key={key}>{item}<br /></Fragment>))}
 
-                        : (
-                            <textarea className={styles.textInput} />
-                        )}
                 </div>
 
                 <div className={styles.Right}>

@@ -6,9 +6,7 @@ import { RecoilRoot } from 'recoil';
 import {
   QueryClient,
   QueryClientProvider,
-  useQuery,
 } from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
 import Head from 'next/head'
 
 
@@ -24,8 +22,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         </Head>
         <div className="globalwrapper">
           <Component {...pageProps} />
-          {/* <ReactQueryDevtools initialIsOpen /> */}
-          <ReactQueryDevtools />
         </div>
       </RecoilRoot>
     </QueryClientProvider>

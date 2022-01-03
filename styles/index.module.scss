@@ -1,0 +1,445 @@
+.container {
+    max-width: 1040px;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+.advantagesWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.advantagesImg {
+    padding-top: 5px;
+    max-width: 380px;
+    img {
+        object-fit: fill;
+        border-radius: 12px;
+    }
+}
+.typesImage {
+    width: 380px;
+    padding-top: 20px;
+    img {
+        object-fit: fill;
+        border-radius: 12px;
+    }
+}
+.advantages {
+    color: #212529;
+    max-width: 605px;
+    padding-left: 16px;
+    margin-bottom: 70px;
+    h2 {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.33;
+        margin-bottom: 21px;
+        max-width: 560px;
+    }
+    p {
+        line-height: 1.56;
+        letter-spacing: normal;
+        color: #495057;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 32px;
+        span {
+            font-weight: bold;
+        }
+    }
+    button {
+        height: 44px;
+        padding: 12px 16px;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.43;
+        color: #fff;
+        background-color: #343a40;
+        border: 1px solid transparent;
+    }
+    button + button {
+        margin-left: 12px;
+    }
+    .orangeBtn {
+        background-color: #1890ff;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: #fff;
+        }
+    }
+}
+
+//
+
+.features {
+    margin-bottom: 124px;
+    display: flex;
+    gap: 70px;
+}
+.featuresItem {
+    max-width: 250px;
+    span {
+        padding-left: 4px;
+    }
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.56;
+        color: #212529;
+        margin-bottom: 8px;
+        margin-top: 10px;
+    }
+    p {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.75;
+        color: #212529;
+    }
+}
+.featuresItem:last-child > p {
+    padding-right: 20px;
+}
+.iconSector {
+    &:before {
+        content: "\e946";
+        font-family: "icomoon";
+        color: #1890ff;
+        font-size: 36px;
+        font-weight: lighter;
+    }
+}
+.iconPeople {
+    &:before {
+        content: "\e951";
+        font-family: "icomoon";
+        color: #1890ff;
+        font-size: 36px;
+        font-weight: lighter;
+    }
+}
+.iconTarget {
+    &:before {
+        content: "\e911";
+        font-family: "icomoon";
+        color: #1890ff;
+        font-size: 36px;
+        font-weight: lighter;
+    }
+}
+
+//
+.checkLine {
+    display: flex;
+    align-items: center;
+}
+.checkTxt {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #212529;
+    margin-left: 14px;
+}
+.types {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 120px;
+}
+
+.typesText {
+    max-width: 460px;
+    h3 {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: normal;
+        color: #212529;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #343a40;
+        margin-bottom: 20px;
+    }
+}
+.typesInfo {
+    border-bottom: 2px solid #1890ff;
+    padding-bottom: 2px;
+}
+.infoIcon {
+    &::before {
+        font-family: "icomoon";
+        content: "\e978";
+        font-size: 16px;
+        font-weight: normal;
+        color: #1890ff;
+        cursor: pointer;
+    }
+}
+//
+.offer {
+    margin-bottom: 99px;
+    display: flex;
+    gap: 100px;
+}
+.offerTxt {
+    max-width: 460px;
+    h3,
+    h3 > p {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: normal;
+        color: #212529;
+        margin: 0;
+    }
+    p {
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #343a40;
+        margin-bottom: 24px;
+        margin-top: 16px;
+    }
+}
+.checkLineOffer {
+    align-items: flex-start;
+    span {
+        padding-top: 8px;
+    }
+}
+.offerImage {
+    width: 380px;
+    img {
+        border-radius: 12px;
+        object-fit: cover;
+    }
+}
+
+//
+
+.carouselContainer {
+    max-width: 820px;
+    margin: 0 auto;
+}
+.comments {
+    background-color: #f8f9fa;
+    padding: 100px;
+    margin-top: 70px;
+}
+.carouselItem {
+    display: flex !important;
+    gap: 100px;
+    .person {
+        max-width: 140px;
+        .photo {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin-bottom: 9px;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.78;
+            letter-spacing: normal;
+            color: #212529;
+            margin-bottom: 4px;
+        }
+        p {
+            font-size: 15px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+    }
+    .comment {
+        max-width: 540px;
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        color: #212529;
+    }
+}
+@media (max-width: 1023px) {
+    .carouselItem {
+        .comment {
+            font-size: 20px;
+            max-width: 49%;
+            display: flex;
+            align-items: center;
+        }
+        .person {
+            max-width: 49%;
+        }
+    }
+    .types {
+        gap: 25px;
+        justify-content: space-between;
+    }
+    .offer {
+        gap: 25px;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 950px) {
+    .advantagesWrapper {
+        gap: 15px;
+    }
+    .advantages {
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+        }
+        button {
+            margin-bottom: 10px;
+            margin-right: 30px;
+        }
+        button + button {
+            margin-left: 0;
+        }
+    }
+    .features {
+        gap: 10px;
+    }
+    .offerTxt,
+    .typesText {
+        max-width: 60%;
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            p {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+@media (max-width: 740px) {
+    .features {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 700px) {
+    .comments {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    .carouselItem {
+        gap: 50px;
+        .comment {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .person {
+            max-width: 49%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3 {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+@media (max-width: 620px) {
+    .advantagesWrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        .advantages {
+            max-width: 90%;
+            margin-bottom: 0;
+            button {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+        }
+        .advantagesImg {
+            max-width: 100%;
+        }
+    }
+    .features {
+        margin-bottom: 30px;
+    }
+    .types {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        &Text {
+            max-width: 90%;
+        }
+    }
+    .offer {
+        flex-direction: column;
+        align-items: center;
+        &Txt {
+            max-width: 90%;
+        }
+    }
+}
+@media (max-width: 525px) {
+    .carouselItem {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        .comment {
+            font-size: 16px;
+            max-width: 80%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+@media (max-width: 425px) {
+    .advantagesWrapper {
+        .advantagesImg {
+            max-width: 100%;
+        }
+    }
+    .typesImage {
+        max-width: 100%;
+    }
+    .offerImage{
+        max-width: 100%;
+    }
+    .typesInfo{
+        padding-bottom: 0;
+        line-height: 1.6;
+    }
+    .offer{
+        margin-bottom: 75px;
+    }
+}

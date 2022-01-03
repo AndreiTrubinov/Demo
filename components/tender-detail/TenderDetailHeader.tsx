@@ -22,8 +22,8 @@ export default function TenderDetailHeader({ me, tender, currentTab }: Props) {
 
             <div className={styles.header}>
                 <button className={styles.arrowLeft} onClick={() => router.push({
-                    pathname: "/tender",
-                    query: omit(router.query, ['id', 'proposalid', 'activeKey'])
+                    pathname: "/tender-detail",
+                    query: omit(router.query, [ 'proposalid', 'activeKey'])
                 })}></button>
                 <div className={styles.Name}>
                     <h3>{tender.jobtitle}</h3>
