@@ -45,12 +45,9 @@ export default function HomeNav({ type }: { type?: string }) {
                         <span>{t('registerasagencybutton', "S'inscrire")}</span>
                     </Button>
                     :
-//                     <Button className={styles.button} type="primary" onClick={() => router.push("/tender")}>
-//                         <span>{t('registerasentreprisebutton', "S'inscrire")}</span>
-//                     </Button>
-                    <Link href="/tender">
-                        <a className={styles.button}>{t('registerasagencybutton', "S'inscrire")} </a>
-                    </Link>
+                     <Button className={styles.button} type="primary" onClick={() => router.push("/tender")}>
+                         <span>{t('registerasentreprisebutton', "S'inscrire")}</span>
+                     </Button>
                 }
 
 
