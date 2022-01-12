@@ -17,6 +17,7 @@ export default function HomeNav({ type }: { type?: string }) {
     const onClose = () => {
         setVisible(false);
     };
+    
     return (
         <div className={styles.Nav}>
             <Logo />
